@@ -37,12 +37,12 @@
             <choice id="route-choose-country">
                 <when id="route-when-uk">
                     <xpath>/order/customer/country = 'UK'</xpath>
-                    <log id="route-log-uk" message="Sending order ${file:name} to the UK"/>
+                    <log id="route-log-uk" message="Sending order ${file:name} to the United Kingdom"/>
                     <!-- Put additional routing rules for UK messages here -->
                 </when>
                 <when id="route-when-us">
                     <xpath>/order/customer/country = 'US'</xpath>
-                    <log id="route-log-us" message="Sending order ${file:name} to the US"/>
+                    <log id="route-log-us" message="Sending order ${file:name} to the United States"/>
                     <!-- Put additional routing rules for US messages here -->
                 </when>
                 <otherwise id="route-when-other-country">
